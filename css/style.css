@@ -1,0 +1,302 @@
+/* CSS Reset */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Navigation Bar */
+.h-nav-resp {
+  /* height: 0; */
+  
+  
+
+}
+
+
+
+.logo {
+  width: 20%;
+  display: flex;
+  display: inline-block;
+  margin: auto;
+}
+
+.logo img {
+  width: 25%;
+  height: 75%;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+  
+  
+}
+
+.nav-list {
+  width: 90%;
+  display: flex;
+  text-align: center;
+}
+
+.nav-list li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 15px 4px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 4px;
+  border-radius: 20px;
+}
+
+.nav-list li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.right-nav {
+  text-align: right;
+  width: 50%;
+  padding: 0 11px;
+}
+
+#search {
+  padding: 5px;
+  font-size: 1.1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url(../img/bg-1.jpg);
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+
+/*  First Section */
+.first-section {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-width: 90%;
+  margin: auto;
+  height: 75%;
+}
+
+.right-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section {
+  width: 30%;
+}
+
+.text-lg {
+  font-size: 4rem;
+}
+
+.text-sm {
+  font-size: 1.7rem;
+}
+
+.btn {
+  font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 7px;
+    margin: 20px 0;
+    background: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.btn:hover {
+  background-color: red;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+/* Second Section */
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: rgb(197, 222, 236);
+  padding: 10px;
+}
+
+.second-section .grid-container2 {
+  height: 450px;
+  background: url("../img/pic2.jpg");
+  background-size: cover;
+}
+
+.second-section .grid-container1 {
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.second-section .grid-container3 {
+  height: 450px;
+  background: url("../img/pic3.jpg");
+  background-size: cover;
+}
+
+.second-section .grid-container4 {
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.second-section .grid-container5 {
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.second-section .grid-container6 {
+  height: 450px;
+  background: url("../img/pic4.jpg");
+  background-size: cover;
+}
+
+/* Third Section */
+.contact {
+  height: 115vh;
+  background: url('../img/contact.jpg');
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.text-center {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.h-secondary {
+  font-size: 3rem;
+  color: #000;
+  
+}
+
+.enquiry {
+  max-width: 500px;
+  margin: auto;
+}
+
+.enquiry input {
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+.enquiry select {
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+.enquiry textarea {
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+
+.set {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid black;
+  color: #000;
+  padding: 10px;
+  background: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+
+/* Responsiveness */
+.burgur {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right:2%;
+  top: 2%;
+
+
+}
+
+.line {
+  width: 33px;
+  background-color: #fff;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1360px) {
+  .nav-list {
+    flex-direction: column;
+    
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    flex-direction: column;
+  }
+  .right-nav {
+    
+    width: 28%;
+    text-align: center;
+  }
+  .burgur {
+    display: block;
+  }
+  .h-nav-resp {
+    height: 33rem;
+  }
+  .v-class-resp {
+    opacity: 0;
+  }
+}
